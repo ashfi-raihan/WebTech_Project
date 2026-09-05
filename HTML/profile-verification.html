@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Verify Profile</title>
+    <link rel="stylesheet" href="../CSS/profile-verification.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="profile-creation.html">Back to Profile</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Identity Verification</h2>
+            <p>Upload a government-issued ID or certificate to earn a "Verified" badge.</p>
+            <form id="verification-form">
+                <label for="doc-type">Document Type:</label>
+                <select name="doc_type" id="doc-type" required>
+                    <option value="passport">Passport</option>
+                    <option value="national_id">National ID Card</option>
+                    <option value="degree">University Degree</option>
+                </select>
+                
+                <label for="file-upload">Upload Document:</label>
+                <input type="file" id="file-upload" name="document" accept=".pdf, .jpg, .png" required style="margin-top: 10px; margin-bottom: 20px; display: block;">
+                
+                <button type="submit">Submit for Review</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

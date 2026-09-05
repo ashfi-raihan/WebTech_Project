@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Setup Profile</title>
+    <link rel="stylesheet" href="../CSS/profile-creation.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="search-filter.html">Explore</a>
+            <a href="post-skill.html">Post a Skill</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Create Your Profile</h2>
+            <form id="profile-form">
+                <input type="text" name="headline" placeholder="Professional Headline (e.g. Web Developer)" required>
+                <textarea name="bio" placeholder="Tell us about your background and expertise..." rows="4" required></textarea>
+                <input type="text" name="skills" placeholder="Skills (comma separated, e.g. HTML, Python, Design)" required>
+                <input type="url" name="portfolio_url" placeholder="Portfolio / Website URL">
+                <button type="submit">Save Profile</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Registration & Login</title>
+    <link rel="stylesheet" href="../CSS/registration-login.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="search-filter.html">Explore Skills</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Welcome to SkillBridge</h2>
+            
+            <!-- Registration Form -->
+            <form id="register-form">
+                <h3>Create an Account</h3>
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <select name="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="Student">Student / Learner</option>
+                    <option value="Teacher">Teacher / Instructor</option>
+                    <option value="Employer">Employer</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+
+            <hr>
+
+            <!-- Login Form -->
+            <form id="login-form">
+                <h3>Login</h3>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

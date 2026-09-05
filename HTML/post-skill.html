@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Post a Skill</title>
+    <link rel="stylesheet" href="../CSS/post-skill.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="profile-creation.html">Profile</a>
+            <a href="search-filter.html">Browse Skills</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Post a New Skill</h2>
+            <form id="post-skill-form">
+                <input type="text" name="title" placeholder="Skill Title (e.g. Master Python in 30 Days)" required>
+                <select name="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Design">Design</option>
+                    <option value="Languages">Languages</option>
+                    <option value="Business">Business</option>
+                </select>
+                <textarea name="description" placeholder="Describe what you will teach..." rows="5" required></textarea>
+                <select name="mode" required>
+                    <option value="Barter">Skill Barter (Exchange)</option>
+                    <option value="Paid">Paid Session</option>
+                </select>
+                <input type="number" name="price" placeholder="Price ($ USD) - Leave 0 if Barter" min="0" value="0">
+                <button type="submit">Publish Skill</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

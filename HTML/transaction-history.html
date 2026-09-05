@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Transaction History</title>
+    <link rel="stylesheet" href="../CSS/transaction-history.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="calendar.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>History & Records</h2>
+            <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #ccc;">
+                        <th>Date</th>
+                        <th>Session</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="history-table-body">
+                    <tr>
+                        <td>2026-08-15</td>
+                        <td>React Fundamentals</td>
+                        <td>Paid ($30)</td>
+                        <td style="color: green;">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2026-08-20</td>
+                        <td>UI/Design Review</td>
+                        <td>Barter</td>
+                        <td style="color: orange;">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

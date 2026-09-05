@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Book a Session</title>
+    <link rel="stylesheet" href="../CSS/session-booking.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="search-filter.html">Back to Search</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Book Your Session</h2>
+            <form id="booking-form">
+                <input type="hidden" name="skill_id" value="1">
+                <label for="booking-date">Select Date:</label>
+                <input type="date" id="booking-date" name="booking_date" required>
+                
+                <label for="booking-time">Select Time Slot:</label>
+                <select id="booking-time" name="booking_time" required>
+                    <option value="10:00 AM">10:00 AM - 11:00 AM</option>
+                    <option value="02:00 PM">02:00 PM - 03:00 PM</option>
+                    <option value="06:00 PM">06:00 PM - 07:00 PM</option>
+                </select>
+
+                <textarea name="notes" placeholder="Add a short message to the instructor..." rows="3"></textarea>
+                <button type="submit">Confirm & Book</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Secure Checkout</title>
+    <link rel="stylesheet" href="../CSS/paid-session.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="search-filter.html">Cancel</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Checkout</h2>
+            <p><strong>Skill:</strong> Advanced Python Mentorship</p>
+            <p><strong>Total Due:</strong> $45.00</p>
+            
+            <form id="payment-form" style="margin-top: 20px;">
+                <input type="text" name="card_name" placeholder="Name on Card" required>
+                <input type="text" name="card_number" placeholder="Card Number" required>
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" name="expiry" placeholder="MM/YY" required>
+                    <input type="text" name="cvv" placeholder="CVV" required>
+                </div>
+                <button type="submit">Complete Payment</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

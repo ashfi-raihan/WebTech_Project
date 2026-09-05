@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Find Skills</title>
+    <link rel="stylesheet" href="../CSS/search-filter.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge</h1>
+        <nav>
+            <a href="post-skill.html">Post Skill</a>
+            <a href="calendar.html">My Schedule</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Find a Skill or Mentor</h2>
+            <form id="search-form">
+                <input type="text" id="search-keyword" placeholder="Search by topic or keyword...">
+                <select id="filter-category">
+                    <option value="All">All Categories</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Design">Design</option>
+                    <option value="Languages">Languages</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="skills-results-grid" style="margin-top: 20px;">
+                <!-- Dynamically populated via JavaScript -->
+                <p>Loading available skills...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillBridge. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>
