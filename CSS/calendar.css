@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+body {
+  background-color: #f5f7fb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.container {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+ul#calendar-session-list {
+  list-style: none;
+  padding: 0;
+}
+ul#calendar-session-list li {
+  background: #e0e7ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 5px solid #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul#calendar-session-list a {
+  background: #2563eb;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  margin-top: auto;
+}
