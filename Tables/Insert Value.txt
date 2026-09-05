@@ -1,0 +1,7 @@
+USE skillbridge_db; 
+INSERT INTO users (id, full_name, email, password, role) 
+VALUES  (1, 'John Doe', 'john@example.com', '$2y$10$45z2lR3rR8WwH.1H8xZ51uK33Yy9Yy9Yy9Yy9Yy9Yy9Yy9Yy9Yy9', 'mentor'), (2, 'Jane Smith', 'jane@example.com', '$2y$10$45z2lR3rR8WwH.1H8xZ51uK33Yy9Yy9Yy9Yy9Yy9Yy9Yy9Yy9Yy9', 'learner'); 
+INSERT INTO skills (user_id, title, category, description, mode, price) 
+VALUES  (1, 'Python Programming Mentorship', 'Programming', 'Learn Python basics.', 'Paid', 45.00), (1, 'UI/UX Design Review', 'Design', 'Reviewing Figma designs.', 'Barter', 0.00); 
+INSERT INTO bookings (skill_id, learner_id, booking_date, booking_time, notes, status) 
+VALUES  (1, 1, '2026-09-10', '10:00 AM', 'Focusing on OOP.', 'Approved'); 
